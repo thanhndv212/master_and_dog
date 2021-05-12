@@ -1,0 +1,15 @@
+<launch>
+
+    <!-- The ever-useful infamous capture_key node -->
+    <node pkg="capture_key" type="capture_key_node" name="ck">
+    </node>
+    
+    <!-- The master -->
+    <node pkg="master_and_dog" type="master" name="charlie">
+    </node>
+
+    <!-- The dog -->
+    <node pkg="master_and_dog" type="dog" name="snoopy">
+    </node>
+
+</launch>
